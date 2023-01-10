@@ -1,16 +1,16 @@
 
 # Table of Contents
 
-1.  [Description of the problem](#org5f9e8c1)
-    1.  [Dataset](#orgfc50321)
-2.  [Reproducible environment](#org8863c54)
-3.  [Running the project](#org51cac50)
+1.  [Description of the problem](#orgeb2111e)
+    1.  [Dataset](#org92fee17)
+2.  [Reproducible environment](#org0a2c616)
+3.  [Running the project](#orgbe647e4)
 
 This repository is the deliverable for the Capstone Project of the Machine
 Learning Zoomcamp 2022.
 
 
-<a id="org5f9e8c1"></a>
+<a id="orgeb2111e"></a>
 
 # Description of the problem
 
@@ -18,7 +18,7 @@ The goal of the project is to use Machine Learning to help predict breast
 cancers, based on mammography scans.
 
 
-<a id="orgfc50321"></a>
+<a id="org92fee17"></a>
 
 ## Dataset
 
@@ -34,7 +34,7 @@ will be on more accurate prediction, without paying much attention to the
 deployment aspects.
 
 
-<a id="org8863c54"></a>
+<a id="org0a2c616"></a>
 
 # Reproducible environment
 
@@ -66,18 +66,18 @@ that you are using them by doing, for example:
     (capstone-mlzoomcamp) $ jupyter --version
     Selected Jupyter core packages...
     IPython          : 8.7.0
-    ipykernel        : 6.17.1
-    ipywidgets       : 8.0.2
-    jupyter_client   : 7.4.7
+    ipykernel        : 6.19.4
+    ipywidgets       : 8.0.3
+    jupyter_client   : 7.4.8
     jupyter_core     : 5.1.0
-    jupyter_server   : 1.23.3
+    jupyter_server   : 2.0.2
     jupyterlab       : not installed
     nbclient         : 0.7.2
-    nbconvert        : 7.2.5
-    nbformat         : 5.7.0
+    nbconvert        : 7.2.7
+    nbformat         : 5.7.1
     notebook         : 6.5.2
     qtconsole        : 5.4.0
-    traitlets        : 5.6.0
+    traitlets        : 5.8.0
 
 But we have to treat tensorflow in a different way, depending on whether we want
 to use a GPU for training or not, and we will have to do it manually:
@@ -89,8 +89,10 @@ to use a GPU for training or not, and we will have to do it manually:
     -   if we have a GPU, we have to do:
         
             (capstone-mlzoomcamp) $ conda install --yes -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+            (capstone-mlzoomcamp) $ conda install --yes -c nvidia cuda-nvcc
             (capstone-mlzoomcamp) $ mkdir -p $CONDA_PREFIX/etc/conda/activate.d
             (capstone-mlzoomcamp) $ echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+            (capstone-mlzoomcamp) $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
             (capstone-mlzoomcamp) $ pip install tensorflow
 
 To open the project notebook, after starting the shell inside the
@@ -126,7 +128,7 @@ environment, you can run the following commands:
     $ conda env remove -n capstone_pr
 
 
-<a id="org51cac50"></a>
+<a id="orgbe647e4"></a>
 
 # Running the project
 
