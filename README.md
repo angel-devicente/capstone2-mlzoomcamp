@@ -1,24 +1,46 @@
 
 # Table of Contents
 
-1.  [Description of the problem](#orgeb2111e)
-    1.  [Dataset](#org92fee17)
-2.  [Reproducible environment](#org0a2c616)
-3.  [Running the project](#orgbe647e4)
+1.  [Description of the problem](#org7720de3)
+    1.  [Dataset](#orgceb842e)
+2.  [Reproducible environment](#orgfff8545)
+3.  [Running the project](#orgf0329cb)
 
-This repository is the deliverable for the Capstone Project of the Machine
+This repository is the deliverable for the Capstone Project 2 of the Machine
 Learning Zoomcamp 2022.
 
 
-<a id="orgeb2111e"></a>
+<a id="org7720de3"></a>
 
 # Description of the problem
 
 The goal of the project is to use Machine Learning to help predict breast
-cancers, based on mammography scans.
+cancers, based on mammography scans. This project can be considered a
+continuation of the first Capstone Project (see
+<https://github.com/angel-devicente/capstone-mlzoomcamp>). In that project I
+focused on reproducibility and deployment, building:
+
+-   quite a robust reproducible recipe,
+-   and a nice full cloud deployment using GitHub and Streamlit Cloud for the user
+    interface; AWS Lambda, AWS ECR, Docker and TensorFlow lite for the DNN model;
+    and AWS S3 for the data storage.
+
+But at that point I didn't worry about the quality of the cancer
+predictions. Actually, the predictions were useless at that point, 
+since the built model just learnt to categorize every image as 'normal'. The
+focus of this project will be on improving these predictions, reusing the
+reproducibility and deployment aspects from the first Capstone Project.
+
+For completeness of the project, I reproduce here all the aspects of
+reproducibility and deployment though, as mentioned above, those parts are not
+new for this project, but rather I just reuse the work of the first Capstone
+Project. 
+
+What is new for this project is all the prediction work (all in the notebook
+`capstone-project-notebook.ipynb`).
 
 
-<a id="org92fee17"></a>
+<a id="orgceb842e"></a>
 
 ## Dataset
 
@@ -34,7 +56,7 @@ will be on more accurate prediction, without paying much attention to the
 deployment aspects.
 
 
-<a id="org0a2c616"></a>
+<a id="orgfff8545"></a>
 
 # Reproducible environment
 
@@ -128,7 +150,7 @@ environment, you can run the following commands:
     $ conda env remove -n capstone_pr
 
 
-<a id="orgbe647e4"></a>
+<a id="orgf0329cb"></a>
 
 # Running the project
 
