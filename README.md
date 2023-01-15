@@ -1,16 +1,21 @@
 
 # Table of Contents
 
-1.  [Description of the problem](#org7720de3)
-    1.  [Dataset](#orgceb842e)
-2.  [Reproducible environment](#orgfff8545)
-3.  [Running the project](#orgf0329cb)
+1.  [Description of the problem](#org7ecd4c4)
+    1.  [Dataset](#org8665cd6)
+2.  [Reproducible environment](#org621c033)
+3.  [Running the project](#orga010791)
+
+UNFINISHED. On <span class="timestamp-wrapper"><span class="timestamp">[2023-01-16 Mon] </span></span> the Data Engineering course was starting, and I
+simply didn't have time to finish both at the same time. I've got enough credits
+for the MLZoomcamp certificate, so I decide to drop this one. Perhaps I can play
+with this later on my own.
 
 This repository is the deliverable for the Capstone Project 2 of the Machine
 Learning Zoomcamp 2022.
 
 
-<a id="org7720de3"></a>
+<a id="org7ecd4c4"></a>
 
 # Description of the problem
 
@@ -40,7 +45,7 @@ What is new for this project is all the prediction work (all in the notebook
 `capstone-project-notebook.ipynb`).
 
 
-<a id="orgceb842e"></a>
+<a id="org8665cd6"></a>
 
 ## Dataset
 
@@ -56,7 +61,7 @@ will be on more accurate prediction, without paying much attention to the
 deployment aspects.
 
 
-<a id="orgfff8545"></a>
+<a id="org621c033"></a>
 
 # Reproducible environment
 
@@ -150,7 +155,7 @@ environment, you can run the following commands:
     $ conda env remove -n capstone_pr
 
 
-<a id="orgf0329cb"></a>
+<a id="orga010791"></a>
 
 # Running the project
 
